@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+	int div=2,no,flag=0;
+	clrscr();
+	printf("\t\t\t\tprim or not\n");
+	printf("\nenter any number;")
+	scanf("%d",&no);
+	while(div<no)
+	{
+		if(no%div==0)
+		{
+			flag=0;
+			break;
+		}
+		div++;
+	}
+	if(flag==0)
+	{
+		printf("\nnot a prim no.");
+	}
+	else
+	{
+		printf("\nprim no.");
+	}
+	getch();
+}
